@@ -237,8 +237,8 @@ get_k_top_all_RFs <- function(RIF.Scores, k, x, y){
 	Top.lncRNAs <- data.frame(cbind(Top.lncRNAs, Gene.type=rep(3, nrow(Top.lncRNAs))))
 	Top.lncRNAs$Gene.ID <- substr(Top.lncRNAs$Gene.ID,10,15)
 
-	k.Top.All.Fs <- rbind(Top.TFs, Top.EFs, Top.lncRNAs)
-	return(k.Top.All.Fs)
+	k.Top.All.RFs <- rbind(Top.TFs, Top.EFs, Top.lncRNAs)
+	return(k.Top.All.RFs)
 	}
 
 ####################################################################
