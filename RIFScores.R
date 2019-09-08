@@ -144,7 +144,7 @@ RIF <- function(Exprs, Exprs1, Exprs2, Regulatory.Type, Method, adjp){
 	rownames(Reg.Exprs2) <- Reg.Exprs2[,1]
 	Reg.Exprs2 <- Reg.Exprs2[,2:ncol(Reg.Exprs2)]
 
-	cutoff <- min(50, nrow(Exprs1))
+	cutoff <- min(500, nrow(Exprs1))
 	ncol.DERes1 <- ncol(Reg.Exprs1)
 	DERes.Exprs1 <- Exprs1[c(1:cutoff), 1:ncol.DERes1]
 	mean.DERes.Exprs1 <- apply(DERes.Exprs1, 1, mean)
