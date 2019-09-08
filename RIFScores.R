@@ -351,8 +351,8 @@ RIF_Analysis <- function(ExprData, Method, k_top, adjp, study){
 	}
 
 # Example
-#Res <- RIF_Analysis(ExprData, Method='Fisher', k_top=10, adjp=0.01, study='prostate')
-Res <- RIF_Analysis(ExprData, Method='Fisher', k_top=10, adjp=0.01, study=NULL)
+Res <- RIF_Analysis(ExprData, Method='Fisher', k_top=10, adjp=0.01, study='prostate')
+#Res <- RIF_Analysis(ExprData, Method='Fisher', k_top=10, adjp=0.01, study=NULL)
 head(Res$DEGs)
 head(Res$RIF.Scores)
 head(Res$k.Top.RIF.Scores)
