@@ -1,4 +1,6 @@
-A tool for computation of Regulatory Impact Factor(RIF) scores with alternative correlation measures  and tested on gene expression data for prostate cancer
+A tool for computation of Regulatory Impact Factor(RIF) scores with alternative correlation measures  and tested on gene expression data for prostate cancer.
+
+
 Required packages:
 
 	edgeR: Version >= 3.20.9
